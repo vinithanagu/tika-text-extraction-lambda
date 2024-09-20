@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Start the Tika server in the background
-java -jar tika-server-standard-${TIKA_VERSION}.jar -p 9998 &
+java -jar tika-server-standard-2.9.2.jar -p 9998 &
 
 sleep 8
 

@@ -12,7 +12,7 @@ ENV PATH="$JAVA_HOME/bin:$PATH"
 # Install any dependencies required by your Lambda function
 COPY requirements.txt  ${LAMBDA_TASK_ROOT}
 
-COPY tika-server-1.24.jar  ${LAMBDA_TASK_ROOT}
+COPY tika-server-standard-2.9.2.jar  ${LAMBDA_TASK_ROOT}
 
 user root
 
