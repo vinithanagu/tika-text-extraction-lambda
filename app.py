@@ -29,9 +29,9 @@ def handler(event, context):
         headers = {
             'Accept': 'text/plain'
         }
-        response = requests.post(f'{TIKA_URL}form', files=files, headers=headers)
+        response = requests.post(f'{TIKA_URL}/form', files=files, headers=headers)
 
-   return {
-        'statusCode': reposne.status_code,
+    return {
+        'statusCode': response.status_code,
         'body': response.text
     }
